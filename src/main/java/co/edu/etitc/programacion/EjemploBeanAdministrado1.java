@@ -1,7 +1,10 @@
 package co.edu.etitc.programacion;
 
 import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,6 +12,7 @@ import org.springframework.stereotype.Component;
  * llamando a los diferentes métodos de inicializacion / destruccion
  */
 @Component
+@Scope(value = BeanDefinition.SCOPE_SINGLETON) // Scope singleton
 public class EjemploBeanAdministrado1 
     implements InitializingBean, DisposableBean
 {

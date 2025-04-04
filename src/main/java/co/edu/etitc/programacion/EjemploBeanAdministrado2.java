@@ -1,11 +1,14 @@
 package co.edu.etitc.programacion;
 
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
 @Component
+@Scope(BeanDefinition.SCOPE_PROTOTYPE) // Scope prototype.
 public class EjemploBeanAdministrado2 {
 
     /**
