@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Lista de usuarios</title>
+        <base href="http://localhost:8080/static/"/>
+        <script src="scripts/usuarios.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+        <script>
+            $(document).ready(() => obtenerListaUsuarios())
+        </script>
+    </head>
+    <body>
+        <h1>Lista Usuarios:</h1>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody id="listaUsuarios"></tbody>
+        </table>
+        <br>
+        <a href="index.html">Regresar</a>
+    </body>
+</html>
