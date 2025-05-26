@@ -4,24 +4,32 @@
         <base href="http://localhost:8080/static/"/>
         <script src="scripts/usuarios.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
         <script>
             $(document).ready(() => obtenerListaUsuarios())
         </script>
     </head>
     <body>
-        <h1>Lista Usuarios:</h1>
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Edad</th>
-                </tr>
-            </thead>
-            <tbody id="listaUsuarios"></tbody>
-        </table>
-        <br>
-        <a href="index.html">Regresar</a>
+        <h1 class="h1">Lista Usuarios:</h1>
+        <div class="container">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaUsuarios"></tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a class="btn btn-secondary" href="index.html">Regresar</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
