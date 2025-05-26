@@ -2,25 +2,42 @@
     <head>
         <title>Lista de usuarios</title>
         <base href="http://localhost:8080/static/"/>
-        <script src="scripts/usuarios.js"></script>    
+        <script src="scripts/usuarios.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
-        <h1>Crear usuario</h1>
+        <h1 class="h1">Crear usuario</h1>
         <form id="nuevoUsuario">
             <fieldset>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido"><br>
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" min="18"><br>
-                <button type="submit">Crear</button>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" class="form-control"><br>
+                        </div>
+                        <div class="col-12">
+                            <label for="edad" class="form-label">Edad:</label>
+                            <input type="number" id="edad" name="edad" min="18" class="form-control"><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <button type="submit" class="btn btn-primary m-1">Crear</button>
+                                <a href="index.html" class="btn btn-secondary m-1">Regresar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
         </form>
         <script>
             document.getElementById("nuevoUsuario").addEventListener("submit", crearUsuario);
         </script>
-        <br>
-        <a href="index.html">Regresar</a>
     </body>
 </html>

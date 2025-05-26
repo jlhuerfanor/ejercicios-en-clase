@@ -3,10 +3,18 @@
         <title>Pagina principal usuarios</title>
         <meta charset="UTF-8">
         <base href="/static/"/>
+        <script src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
-        <h1>Base de datos de usuarios</h1>
-        <a href="lista-usuarios.html">Lista de usuarios</a>
-        <a href="nuevo-usuario.html">Nuevo usuario</a>
+        <h1 class="h1">Base de datos de usuarios</h1>
+        <div class="container">
+            <div class="row p-3">
+                <a class="btn btn-primary" href="lista-usuarios.html">Lista de usuarios</a>
+            </div>
+            <div class="row p-3">
+                <a class="btn btn-primary" href="nuevo-usuario.html">Nuevo usuario</a>    
+            </div>
+        </div>
     </body>
 </html>
