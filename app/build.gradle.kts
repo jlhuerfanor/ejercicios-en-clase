@@ -24,6 +24,8 @@ dependencies {
     // This dependency is used by the application.
     implementation(libs.guava)
     implementation("org.springframework:spring-context:6.2.11")
+    implementation("org.springframework:spring-aspects:6.2.11")
+    implementation("org.aspectj:aspectjweaver:1.9.24")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
