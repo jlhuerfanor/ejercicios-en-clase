@@ -26,6 +26,9 @@ dependencies {
     implementation("org.springframework:spring-context:6.2.11")
     implementation("org.springframework:spring-aspects:6.2.11")
     implementation("org.aspectj:aspectjweaver:1.9.24")
+    implementation("com.h2database:h2:2.4.240")
+    implementation("org.springframework.data:spring-data-jdbc:3.5.4")
+    implementation("org.springframework:spring-jdbc:3.5.4")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
