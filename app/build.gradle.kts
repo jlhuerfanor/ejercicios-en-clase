@@ -23,6 +23,8 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+    implementation("org.springframework.boot:spring-boot-starter-web:3.5.7")
+    
     implementation("org.springframework:spring-context:6.2.11")
     implementation("org.springframework:spring-aspects:6.2.11")
     implementation("org.aspectj:aspectjweaver:1.9.24")

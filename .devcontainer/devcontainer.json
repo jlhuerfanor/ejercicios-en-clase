@@ -1,0 +1,27 @@
+{
+    "name": "Java 21 & Gradle 8.14.3 Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/java:21",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "21",
+            "gradleVersion": "8.14.3",
+            "installGradle": "true"
+        }
+    },
+    "runArgs": [ "--userns=keep-id","--env=DISPLAY=${localEnv:DISPLAY}" ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vmware.vscode-boot-dev-pack"
+            ]
+        }
+    },
+    "remoteUser": "vscode",
+    "mounts": [
+        "source=/tmp/ssh-XXXXXXU7CJdQ/agent.554716,target=/ssh-agent,type=bind"
+    ],
+    "remoteEnv": {
+        "SSH_AUTH_SOCK": "/ssh-agent"
+    }
+}

@@ -1,7 +1,8 @@
 # Ignore Gradle project-specific cache directory
 .gradle
-
+target/
+**/build
 # Ignore Gradle build output directory
-build
+**/build
 
 test.db.mv.db
