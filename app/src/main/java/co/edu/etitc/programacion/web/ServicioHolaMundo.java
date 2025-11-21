@@ -20,11 +20,10 @@ public class ServicioHolaMundo implements InitializingBean {
     }
 
     @GetMapping("/saludo")
-    public ResponseEntity<String> saludarPost(
+    public ResponseEntity<String> saludarGet(
         @RequestParam("nombre") String nombre,
         @RequestParam("apellido") String apellido
     ) {
-        return ResponseEntity.status(405).build(); // .build();
-        // return ResponseEntity.ok("Hola %s %s!".formatted(nombre, apellido));
+        return ResponseEntity.ok("Hola %s %s!".formatted(nombre, apellido));
     }
 }
